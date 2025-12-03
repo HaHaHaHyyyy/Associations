@@ -14,21 +14,23 @@ noun = {'Player 1': [], 'Player 2': [], 'Player 3': [],'Player 4': [],'Player 5'
 number_of_players= int(input('Число игроков: '))
 
 current_player = 0
-for i in range(0,number_of_players):
-
+for i in range(number_of_players):
+    current_player += 1
     print('Player: ', current_player + 1)
 
-    for j in range(0,3):
-        adj[current_player] = input('Введите прилагательные')
+    for j in range(3):
+        adj['Player ' + str(current_player)].append(input('Введите прилагательные'))
 
-    for j in range(0,3):
-        verb[current_player] = input('Введите глаголы')
+    for j in range(3):
+        verb['Player ' + str(current_player)].append(input('Введите глаголы'))
 
-    for j in range(0,3):
-        noun[current_player] = input('Введите существительные')
+    for j in range(3):
+        noun['Player ' + str(current_player)].append(input('Введите существительные'))
+
+    clear()
+
 
 #while not 15 in points.values():
 
-clear()
 
-print(1111)
+
