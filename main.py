@@ -11,7 +11,7 @@ verb = {'Player 1': [], 'Player 2': [], 'Player 3': [],'Player 4': [],'Player 5'
 
 noun = {'Player 1': [], 'Player 2': [], 'Player 3': [],'Player 4': [],'Player 5': []}
 
-number_of_players=int(input('Число игроков: '))
+number_of_players= int(input('Число игроков: '))
 
 current_player = 0
 for i in range(0,number_of_players):
